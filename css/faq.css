@@ -1,0 +1,23 @@
+
+*{
+    background-color: #161617;
+    color: white;
+    font-family: Tw Cen MT;
+  }
+
+ 
+
+
+  
+  .accordion {
+    margin-bottom: 150px;
+  }
+  
+.accordion-button{
+    background-color: #c96f6f;
+    color: #aa8f8f;
+    border: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }

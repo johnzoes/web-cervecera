@@ -1,0 +1,99 @@
+/* Estilo del botón de navegación */
+.nav-button {
+  position: absolute;
+  cursor: pointer;
+  border: none;
+  background: none;
+  padding: 20px 0 0 30px;
+  background-color: #161617;
+  z-index: 10;
+  
+}
+
+/* Estilo de las barras del botón de navegación */
+.nav-button div {
+  width: 25px;
+  height: 3px;
+  background-color: rgb(255, 255, 255);
+  margin: 8px 0;
+  transition: transform 0.3s ease;
+
+} 
+
+/* Transformación de la primera barra del botón de navegación cuando se expande */
+.nav-button[aria-expanded='true'] div:nth-child(1) {
+  transform: translateY(5.5px) rotate(45deg);
+} 
+
+/* Transformación de la segunda barra del botón de navegación cuando se expande */
+.nav-button[aria-expanded='true'] div:nth-child(2) {
+  transform: translateY(-5.5px) rotate(-45deg);
+} 
+
+/* Estilo del menú de navegación */
+#nav {
+  position: fixed;
+  align-items: flex-start;
+  inset: 0;
+  background-color: #161617;
+  width: 15rem;
+  list-style: none;
+  transform: translateX(-100%);
+  transition: transform 500ms ease-out, opacity 500ms ease-out;
+  z-index: 1;
+} 
+
+
+
+/* Estilo del menú de navegación cuando está visible */
+#nav[data-visible="true"] {
+  display: flex;
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Estilo del fondo del menú de navegación */
+#nav-background {
+  margin-top: 50px;
+  display: flex;
+  background-color: #161617;
+  text-align: left;
+  width: 100%;
+ 
+} 
+
+/* Estilo de la lista dentro del fondo del menú de navegación */
+#nav-background ul {
+  list-style: none;
+  padding: 10px;
+  flex-direction: column;
+  text-align: left;
+} 
+
+/* Estilo de los elementos de la lista */
+#nav-background ul li {
+  width: 100%; /* Asegurar que los elementos ocupen todo el ancho */
+  text-align: left; 
+} 
+
+/* Estilo de los enlaces de navegación */
+#nav-background .nav-link {
+  color: rgb(255, 253, 253);
+  text-decoration: none; 
+  padding: 10px 15px; /* Espaciado interno */
+  display: block; /* Ocupa todo el ancho disponible */
+  font-size: 25px;
+} 
+
+/* Estilo para ocultar elementos */
+.hidden {
+  display: none;
+} 
+
+
+#sub-nav-background{
+  margin-top: 50px;
+  background-color: #161617;
+  text-align: left;
+  width: 100%;
+}
