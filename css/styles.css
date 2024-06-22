@@ -1,5 +1,5 @@
 body{
-    font-family: Tw Cen MT, sans-serif;
+    font-family: Tw Cen MT;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
@@ -29,10 +29,9 @@ footer{
 
 .title{
     display: flex;
-    justify-content: end;
+    justify-content: center;
     width: 100%;
 }
-
 
 section{
     margin: 0;
@@ -47,11 +46,15 @@ section{
 .welcome-message{
     position: absolute;
     text-align: center;
-    font-size: 3rem;
     background-color: rgba(23, 23, 23, 0.449);
     backdrop-filter: blur(5px);
     top: 12rem;
     right: 22rem;
+}
+
+.welcome-message h2{
+    font-size: 50px;
+
 }
 
 .welcome-sub{
@@ -60,6 +63,7 @@ font-size: 2rem;
 
 .welcome-color{
     color: #d4ba13;
+    font-size: 100px;
 }
 
 
@@ -81,3 +85,14 @@ font-size: 2rem;
     background-color: #000000; /* Color de fondo del botón */
     color: #d4ba13;
 }
+
+
+.text-center{
+    margin: 0px, 40px, 0px, 40px;
+    font-size: 25px;
+}
+
+.text-center h2{
+    font-weight: bold;
+}
+

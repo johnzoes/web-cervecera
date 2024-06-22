@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
                      "id":1,
                      "name": "Ron Cartavio",
                      "price": 25.90,
-                     "photo_url": ""
+                     "photo_url": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.metro.pe%2Fron-cartavio-black-inti-raymi-botella-750ml-2%2Fp&psig=AOvVaw1VZL3j9t5Ejduj2QoutlCA&ust=1717463940322000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCLCYqvKhvoYDFQAAAAAdAAAAABAE"
                  },
                  {
                      "id":2,
