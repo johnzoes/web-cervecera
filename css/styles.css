@@ -70,8 +70,8 @@ font-size: 2rem;
 #welcome-button{
     margin: 1rem;
     font-family: Tw Cen MT;
-    background-color: #d4ba13; /* Color de fondo del botón */
-    color: rgb(0, 0, 0); /* Color del texto */
+    background-color: #000000; /* Color de fondo del botón */
+    color: #d4ba13; /* Color del texto */
     border: none; /* Sin bordes */
     padding: 10px 20px; /* Espaciado interno */
     font-size: 2rem; /* Tamaño de la fuente */
@@ -82,10 +82,9 @@ font-size: 2rem;
 }
 
 #welcome-button:hover{
-    background-color: #000000; /* Color de fondo del botón */
-    color: #d4ba13;
+    background-color: #d4ba13; /* Color de fondo del botón */
+    color: #000000;
 }
-
 
 .text-center{
     margin: 0px, 40px, 0px, 40px;
