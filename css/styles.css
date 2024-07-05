@@ -1,196 +1,168 @@
-/* Estilo general para el cuerpo de la página */
 body {
   margin: 0;
   padding: 0;
-  color: #f4f4f4; /* Color de fondo */
-  font-family: 'Poppins', sans-serif; /* Fuente principal */
-  background-image: url('../assets/images/bdcheerw.png'); /* Imagen de fondo */
-  background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el contenedor */
-  background-position: center; /* Centra la imagen dentro del contenedor */
-}
-
-/* Estilos para el encabezado */
-header {
-  display: flex;
-  background-color: transparent; /* Fondo transparente */
-  color: #fff; /* Color del texto */
-  height: 10vh; /* Altura del encabezado */
-  text-align: center; /* Alineación centrada del texto */
-  padding: 0 20px; /* Espaciado interno */
-}
-
-
-/* Estilos para el título */
-.title {  
-  width: 100%;
-  display: flex;
-
-  justify-content: center ;
-  align-items: center;
-  flex-direction: row;
-  font-family: 'Berkshire Swash', cursive; /* Fuente del título */
-}
-
-.sub{
+  color: #f4f4f4;
+  font-family: 'Poppins', sans-serif;
+  background-image: url('../assets/images/bdcheerw.png');
+  background-size: cover;
+  background-position: center;
   display: flex;
   flex-direction: column;
-
+  min-height: 100vh;
 }
 
-.logo-text{
+.container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+header {
+  display: flex;
+  background-color: transparent;
+  color: #fff;
+  height: 10vh;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  font-family: 'Berkshire Swash', cursive;
+}
+
+.sub {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-text {
   display: flex;
   flex-direction: row;
   width: 50%;
   justify-content: end;
   margin-top: 10px;
-  
 }
 
-.sub span{
+.sub span {
   margin-left: 5vh;
   color: #d4ba13;
 }
 
-.logo{
-  width: 60px; /* Ancho deseado */
-  height: auto; /* Altura automática para mantener la proporción */
-  fill: white ;
+.logo {
+  width: 60px;
+  height: auto;
+  fill: white;
 }
 
-.redes-sociales{
+.redes-sociales {
   float: right;
   width: 50%;
   display: flex;
   flex-direction: row;  
   justify-content: flex-end;
-  float: right;
 }
 
-.logo-red{
+.logo-red {
   margin: 1vh 5vh;
 }
 
-
-
-/* Estilo para el texto principal del título */
 .title h1 {
-  margin: 0; /* Sin márgenes */
-  font-size: 2rem; /* Tamaño de la fuente */
+  margin: 0;
+  font-size: 2rem;
 }
 
-/* Estilo para el subtítulo */
 .title span {
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; /* Fuente del subtítulo */
-  font-size: 1rem; /* Tamaño de la fuente del subtítulo */
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 1rem;
 }
 
-/* Estilos para el contenedor principal */
 main {
-  flex-grow: 1; /* Permite que el contenido principal crezca */
+  flex-grow: 1;
 }
 
-/* Estilos para las secciones */
 section {
-  margin: 10px; /* Márgenes */
-  padding: 10px; /* Espaciado interno */
-  background-color: transparent; /* Fondo transparente */
+  margin: 10px;
+  padding: 10px;
+  background-color: transparent;
 }
 
-/* Estilos para el pie de página */
 footer {
-  text-align: center; /* Alineación centrada del texto */
-  padding: 10px 20px; /* Espaciado interno */
-  background-color: #161617; /* Color de fondo */
-  color: #fff; /* Color del texto */
-  height: 5vh; /* Altura del pie de página */
+  text-align: center;
+  padding: 10px 20px;
+  background-color: #161617;
+  color: #fff;
+  height: 5vh;
 }
 
-/* Estilos para el mensaje de bienvenida */
 .welcome-message {
-  width: 100%; /* Ancho completo */
-
-  text-align: center; /* Alineación centrada del texto */
-  background-color: rgba(23, 23, 23, 0.449); /* Fondo semi-transparente */
-  backdrop-filter: blur(5px); /* Filtro de desenfoque */
-  margin-top: 15vh; /* Márgen superior */
+  width: 100%;
+  text-align: center;
+  background-color: rgba(23, 23, 23, 0.449);
+  backdrop-filter: blur(5px);
+  margin-top: 15vh;
 }
 
-/* Estilos para el texto del mensaje de bienvenida */
 .welcome-message h2 {
-  font-size: 40px; /* Tamaño de la fuente */
+  font-size: 40px;
 }
 
-/* Estilos para el subtítulo del mensaje de bienvenida */
 .welcome-sub {
-  font-size: 1.2rem; /* Tamaño de la fuente */
+  font-size: 1.2rem;
 }
 
-/* Estilos para el texto de color del mensaje de bienvenida */
 .welcome-color {
-  color: #b69f09; /* Color del texto */
-  font-size: 100px; /* Tamaño de la fuente */
+  color: #b69f09;
+  font-size: 100px;
 }
 
-/* Estilos para el botón de bienvenida */
 #welcome-button {
-  margin: 1rem; /* Márgenes */
-  background-color: #000000; /* Color de fondo del botón */
-  color: #d4ba13; /* Color del texto */
-  border: none; /* Sin bordes */
-  padding: 10px 20px; /* Espaciado interno */
-  font-size: 2rem; /* Tamaño de la fuente */
-  cursor: pointer; /* Cursor de mano al pasar sobre el botón */
-  border-radius: 2rem; /* Esquinas redondeadas */
-  transition: background-color 0.3s ease; /* Transición de color */
-  font-weight: bold; /* Texto en negrita */
-  margin-top: 4vh; /* Márgen superior */
+  margin: 1rem;
+  background-color: #000000;
+  color: #d4ba13;
+  border: none;
+  padding: 10px 20px;
+  font-size: 2rem;
+  cursor: pointer;
+  border-radius: 2rem;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+  margin-top: 4vh;
 }
 
-/* Estilos para el botón de bienvenida al pasar el cursor */
 #welcome-button:hover {
-  background-color: #d4ba13; /* Color de fondo del botón al pasar el cursor */
-  color: #000000; /* Color del texto al pasar el cursor */
+  background-color: #d4ba13;
+  color: #000000;
 }
 
-/* Estilos para el texto centrado */
 .text-center {
-  margin: 0px 40px; /* Márgenes */
-  font-size: 25px; /* Tamaño de la fuente */
+  margin: 0px 40px;
+  font-size: 25px;
 }
 
-/* Estilos para el título del texto centrado */
 .text-center h2 {
-  font-weight: bold; /* Texto en negrita */
+  font-weight: bold;
 }
 
-
-/* Estilos para la fuente Berkshire Swash */
 .berkshire-swash-regular {
-  font-family: "Berkshire Swash", serif; /* Fuente */
-  font-weight: 400; /* Peso de la fuente */
-  font-style: normal; /* Estilo normal */
+  font-family: "Berkshire Swash", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
-
-/* Estilos para la fuente Dancing Script */
 .dancing-script {
-  font-family: "Dancing Script", cursive; /* Fuente */
-  font-optical-sizing: auto; /* Tamaño óptico automático */
-  font-weight: 700; /* Peso de la fuente */
-  font-style: normal; /* Estilo normal */
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
 }
 
-/* Estilos para las variaciones de la fuente Poppins */
 .poppins-thin {
   font-family: "Poppins", sans-serif;
   font-weight: 100;
   font-style: normal;
-}
-
-.poppins-extralight, .poppins-light, .poppins-regular, .poppins-medium, 
-.poppins-semibold, .poppins-bold, .poppins-extrabold, .poppins-black, 
-.poppins-thin-italic, .poppins-extralight-italic, .poppins-light-italic, 
-.poppins-regular-italic, .poppins-medium-italic, .poppins-semibold-italic, 
-.poppins-bold-italic, .poppins-extrabold-italic, .poppins-black-italic {
-  font-family: "Poppins", sans-serif;
 }
