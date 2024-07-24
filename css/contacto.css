@@ -1,55 +1,100 @@
 /* Estilos generales */
 body {
-    background-color: #f8f9fa;
-    margin: 0;
-    padding: 0;
-    color: #333;
-  }
-  
-  /* Estilos del encabezado */
-  header {
-    background-color: #007bff;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-.title h1 {
-    margin-top: 20px;
-    font-size: 20rem;
-  }
-  
-  /* Estilos de la sección principal */
-  section {
-    padding: 20px;
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  
-  section .text-center {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  section .text-center p {
-    font-size: 1.125rem;
-    line-height: 1.6;
-  }
-  
-  /* Estilos del pie de página */
-  footer {
-    background-color: #343a40;
-    color: #fff;
-    text-align: center;
-    padding: 15px 0;
-    margin-top: 20px;
-  }
-  
-  footer p {
-    margin: 0;
-    font-size: 0.875rem;
-  }
-  
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Estilos del encabezado */
+header {
+  background-color: #007bff;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header .title h1 {
+  margin-top: 20px;
+  font-size: 2.5rem;
+}
+
+/* Contenedor principal de contacto */
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Estilos de la sección principal */
+.contact-form, .map-container {
+  flex: 1;
+  min-width: 300px;
+  margin: 10px;
+}
+
+/* Estilos del formulario de contacto */
+.contact-form {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin-bottom: 5px;
+  font-size: 1rem;
+  color: #555;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.contact-form button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Estilos del pie de página */
+footer {
+  background-color: #343a40;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 20px;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.875rem;
+}

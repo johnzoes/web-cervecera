@@ -1,5 +1,3 @@
-
-
 /* Estilo del botón de navegación */
 .nav-button {
   position: absolute;
@@ -15,7 +13,7 @@
 .nav-button div {
   width: 25px;
   height: 3px;
-  background-color: rgb(255, 255, 255);
+  background-color: #fff;
   margin: 8px 0;
   transition: transform 0.3s ease;
 }
@@ -75,12 +73,11 @@
 
 /* Estilo de los enlaces de navegación */
 .nav-link {
-  color: rgb(255, 253, 253);
+  color: #fff;
   text-decoration: none;
-  list-style-type: none;
   padding: 10px 15px;
   display: block;
-  font-size: 25px;
+  font-size: 1.25rem;
 }
 
 /* Estilo para ocultar elementos */

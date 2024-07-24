@@ -1,17 +1,11 @@
-
-
-#licores-section {
-    padding: 20px;
-}
-
-#cervezas-section {
-    padding: 20px;
-}
-
+/* Estilos para secciones de licores, cervezas y otros */
+#licores-section,
+#cervezas-section,
 #otros-section {
     padding: 20px;
 }
 
+/* Estilos para las categorías de productos */
 .category {
     margin-bottom: 40px;
 }
@@ -21,12 +15,14 @@
     margin-bottom: 20px;
 }
 
+/* Contenedor de productos */
 .products-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 20px;
 }
 
+/* Estilos para cada producto */
 .product {
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -35,6 +31,7 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+/* Imagen del producto */
 .product img {
     max-width: 100%;
     height: auto;
@@ -43,11 +40,13 @@
     margin-bottom: 10px;
 }
 
+/* Título del producto */
 .product h3 {
     font-size: 18px;
     margin: 10px 0;
 }
 
+/* Descripción del producto */
 .product p {
     font-size: 16px;
     color: #555;

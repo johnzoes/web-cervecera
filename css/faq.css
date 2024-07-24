@@ -1,22 +1,49 @@
+/* Estilos generales */
+body {
+  background-color: #161617;
+  color: white;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
 
-*{
-    background-color: #161617;
-    color: white;
-  }
+/* Estilos del acordeón */
+.accordion {
+  margin-bottom: 150px;
+}
 
- 
+.accordion-button {
+  background-color: #c96f6f;
+  color: #aa8f8f;
+  border: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  text-align: left;
+  width: 100%;
+  cursor: pointer;
+  outline: none;
+}
 
+.accordion-button:hover {
+  background-color: #b85e5e;
+}
 
-  
-  .accordion {
-    margin-bottom: 150px;
-  }
-  
-.accordion-button{
-    background-color: #c96f6f;
-    color: #aa8f8f;
-    border: none;
-    border-radius: 8px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
+.accordion-button:focus {
+  outline: 2px solid #aa8f8f;
+}
+
+.accordion-collapse {
+  background-color: #1e1e1e;
+  color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.accordion-body {
+  padding: 10px;
+  font-size: 1rem;
+  line-height: 1.5;
+}
