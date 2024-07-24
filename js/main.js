@@ -4,9 +4,9 @@ window.onload = function () {
     .then((data) => {
       document.getElementById("navbar").innerHTML = data;
       initializeNav(); // Llama a la función de inicialización después de cargar el navbar
+      adjustArrowPositions(); // Ajusta las posiciones de las flechas
     });
-}
-
+};
 
 function initializeNav() {
   const navButton = document.querySelector('.nav-button');
@@ -38,5 +38,15 @@ function initializeNav() {
     link.addEventListener('click', toggleSubNav);
   });
 
-  console.log("funciona bien:)")
+  console.log("funciona bien:)");
+}
+
+function adjustArrowPositions() {
+  document.querySelectorAll('#nav-background ul li .nav-link').forEach(link => {
+    link.addEventListener('mouseenter', () => {
+      const linkWidth = link.offsetWidth;
+      const arrow = link.querySelector('::after');
+      arrow.style.left = `${linkWidth + 25}px`; // Posiciona la flecha a 25px a la derecha del elemento
+    });
+  });
 }

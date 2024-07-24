@@ -1,5 +1,3 @@
-
-
 /* Estilo del botón de navegación */
 .nav-button {
   position: absolute;
@@ -71,6 +69,7 @@
 #nav-background ul li {
   width: 100%;
   text-align: left;
+  position: relative;
 }
 
 /* Estilo de los enlaces de navegación */
@@ -81,6 +80,26 @@
   padding: 10px 15px;
   display: block;
   font-size: 25px;
+  position: relative;
+}
+
+/* Estilo de los enlaces de navegación con efecto hover */
+.nav-link::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 6px;
+  height: 6px;
+  border-top: 2px solid rgb(255, 253, 253);
+  border-right: 2px solid rgb(255, 253, 253);
+  transform: translateY(-50%) rotate(45deg);
+  opacity: 0;
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.nav-link:hover::after {
+  opacity: 1;
+  transform: translateY(-50%) translateX(25px) rotate(45deg); /* Mueve la flecha a 25px a la derecha al hacer hover */
 }
 
 /* Estilo para ocultar elementos */
