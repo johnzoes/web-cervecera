@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     const otrosSection = document.getElementById('otros-section');
 
-    // Tu array JSON de productos de otros
     const otrosData = [
         {
             "id": 1,
@@ -12,37 +11,37 @@ document.addEventListener('DOMContentLoaded', function() {
                      "id":1,
                      "name": "EVERVESS",
                      "price": 6.90,
-                     "photo_url": ""
+                     "photo_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcIYAWKJdXEmGSU0fmbINIZEhWPjNEHT8C8g&s"
                  },
                  {
                      "id":2,
                      "name": "GUARANÁ",
                      "price": 7.20,
-                     "photo_url": ""
+                     "photo_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKlBbtLzr9_Ag1MDs-3skhmFT-aZ3Xfmg50A&s"
                  },
                  {
                      "id":3,
                      "name": "PEPSI",
                      "price": 5.50,
-                     "photo_url": ""
+                     "photo_url": "https://tofuu.getjusto.com/orioneat-local/resized2/mucndRHp2fkXJCzF2-1200-1200.webp"
                  },
                  {
                      "id":4,
                      "name": "CIFRUS",
                      "price": 3.30,
-                     "photo_url": ""
+                     "photo_url": "https://metroio.vtexassets.com/arquivos/ids/237446-800-auto?v=638173812316500000&width=800&height=auto&aspect=true"
                  },
                  {
                      "id":5,
                      "name": "SAN MATEO",
                      "price": 3.00,
-                     "photo_url": ""
+                     "photo_url": "https://imagedelivery.net/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/40853059_2/w=800,h=800,fit=pad"
                  },
                  {
                      "id":6,
                      "name": "ICE - 1.5KG",
                      "price": 2.20,
-                     "photo_url": ""
+                     "photo_url": "https://jebnalak.com/cdn/shop/products/sfd454s5d45s4df_800x.jpg?v=1646313821"
                  }
      
              ] 
@@ -50,9 +49,8 @@ document.addEventListener('DOMContentLoaded', function() {
         // Resto de las categorías...
     ];
 
-    // Función para generar el HTML de los productos de otros
     function generateOtrosHTML() {
-        otrosSection.innerHTML = ''; // Limpiar el contenido actual
+        otrosSection.innerHTML = '';
 
         otrosData.forEach(categoria => {
             if (categoria.name === "Otros") {
@@ -60,6 +58,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     <div class="product">
                         <h3>${product.name}</h3>
                         <p>Precio: $${product.price.toFixed(2)}</p>
+                        <img src="${product.photo_url || 'https://via.placeholder.com/150'}" alt="${product.name}">
                     </div>
                 `).join('');
 
@@ -75,6 +74,5 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Llamar a la función para generar el HTML de los productos de otros
     generateOtrosHTML();
 });

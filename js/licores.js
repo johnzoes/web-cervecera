@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     const licoresSection = document.getElementById('licores-section');
 
-    // Tu array JSON de productos de licores
     const licoresData = [
         {
             "id": 1,
@@ -12,37 +11,37 @@ document.addEventListener('DOMContentLoaded', function() {
                      "id":1,
                      "name": "Ron Cartavio",
                      "price": 25.90,
-                     "photo_url": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.metro.pe%2Fron-cartavio-black-inti-raymi-botella-750ml-2%2Fp&psig=AOvVaw1VZL3j9t5Ejduj2QoutlCA&ust=1717463940322000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCLCYqvKhvoYDFQAAAAAdAAAAABAE"
+                     "photo_url": "https://plazavea.vteximg.com.br/arquivos/ids/29151898-512-512/20009818.jpg"
                  },
                  {
                      "id":2,
                      "name": "Ballantines",
                      "price": 79.00,
-                     "photo_url": ""
+                     "photo_url": "https://delabodega.pe/wp-content/uploads/2021/05/Whisky-Ballantines-750-ml.jpg"
                  },
                  {
                      "id":3,
                      "name": "RUSSKAYA",
                      "price": 21.90,
-                     "photo_url": ""
+                     "photo_url": "https://plazavea.vteximg.com.br/arquivos/ids/29151899-512-512/408462.jpg"
                  },
                  {
                      "id":4,
                      "name": "Absolut Vodka",
                      "price": 52.90,
-                     "photo_url": ""
+                     "photo_url": "https://licoreriasunidas.pe/cdn/shop/products/2e061f5225f7429eaf76d282125ac1c8.webp?v=1677775979"
                  },
                  {
                      "id":5,
                      "name": "SMIRNOFF",
                      "price": 42.00,
-                     "photo_url": ""
+                     "photo_url": "https://imagedelivery.net/4fYuQyy-r8_rpBpcY7lH_A/falabellaPE/124161365_01/w=1500,h=1500,fit=pad"
                  },
                  {
                      "id":6,
                      "name": "RED LABEL",
                      "price": 59.00,
-                     "photo_url": ""
+                     "photo_url": "https://www.happydrinkdelivery.com/wp-content/uploads/2022/04/JW-RED-LABEL-750-ML.jpg"
                  }
      
              ] 
@@ -50,9 +49,8 @@ document.addEventListener('DOMContentLoaded', function() {
         // Resto de las categorías...
     ];
 
-    // Función para generar el HTML de los productos de licores
     function generateLicoresHTML() {
-        licoresSection.innerHTML = ''; // Limpiar el contenido actual
+        licoresSection.innerHTML = '';
 
         licoresData.forEach(categoria => {
             if (categoria.name === "Licores") {
@@ -60,6 +58,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     <div class="product">
                         <h3>${product.name}</h3>
                         <p>Precio: $${product.price.toFixed(2)}</p>
+                        <img src="${product.photo_url || 'https://via.placeholder.com/150'}" alt="${product.name}">
                     </div>
                 `).join('');
 
@@ -75,6 +74,5 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Llamar a la función para generar el HTML de los productos de licores
     generateLicoresHTML();
 });

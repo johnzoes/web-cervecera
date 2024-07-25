@@ -1,5 +1,11 @@
 #licores-section, #cervezas-section, #otros-section {
     padding: 20px;
+    background-color: #000000;
+    height: 100vh;
+  }
+
+  body{
+    background-color: white !important;
   }
   
   .category {
@@ -22,7 +28,9 @@
     border-radius: 8px;
     padding: 10px;
     text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   }
   
   .product img {
@@ -36,6 +44,7 @@
   .product h3 {
     font-size: 18px;
     margin: 10px 0;
+    color: #000;
   }
   
   .product p {

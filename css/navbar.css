@@ -6,7 +6,7 @@
   background: none;
   padding: 20px 0 0 30px;
   background-color: transparent;
-  z-index: 100; /* Asegurar que el botón esté por encima de otros elementos */
+  z-index: 1000; /* Asegurar que el botón esté por encima de otros elementos */
 }
 
 /* Estilo de las barras del botón de navegación */

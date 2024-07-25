@@ -4,12 +4,22 @@ body {
   padding: 0;
   color: #f4f4f4;
   font-family: 'Poppins', sans-serif;
-  background-image: url('../assets/images/bdcheerw.png');
-  background-size: cover;
-  background-position: center;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+}
+
+.background-image {
+  background-image: url('../assets/images/bdcheerw.png'); /* Ruta a tu imagen de fondo */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
 .container {
@@ -96,11 +106,14 @@ section {
 
 /* Estilos del pie de página */
 footer {
-  text-align: center;
-  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
   background-color: #161617;
   color: #fff;
   height: 5vh;
+  width: 100%;
 }
 
 /* Estilos del mensaje de bienvenida */
@@ -132,12 +145,13 @@ footer {
   color: #d4ba13;
   border: none;
   padding: 10px 20px;
-  font-size: 2rem;
+  font-size: 1.5rem;
   cursor: pointer;
   border-radius: 2rem;
   transition: background-color 0.3s ease;
   font-weight: bold;
   margin-top: 4vh;
+  font-family: 'Poppins', sans-serif;
 }
 
 #welcome-button:hover {
@@ -173,4 +187,34 @@ footer {
   font-family: "Poppins", sans-serif;
   font-weight: 100;
   font-style: normal;
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+  .logo-text {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .redes-sociales {
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .welcome-color {
+    font-size: 50px;
+  }
+  
+  .welcome-message h2 {
+    font-size: 30px;
+  }
+  
+  .welcome-sub {
+    font-size: 1rem;
+  }
+  
+  .logo-red {
+    margin: 1vh 2vh;
+  }
 }
