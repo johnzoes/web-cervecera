@@ -10,6 +10,7 @@ window.onload = function () {
 function initializeNav() {
   const navButton = document.querySelector('.nav-button');
   const nav = document.getElementById('nav');
+  const contentWrapper = document.querySelector('.content-wrapper'); // Selecciona el contenedor principal
   const navBackground = document.getElementById('nav-background');
   const subNavBackground = document.getElementById('sub-nav-background');
   let navVisible = false;
@@ -19,6 +20,12 @@ function initializeNav() {
     navVisible = !navVisible;
     nav.setAttribute('data-visible', navVisible ? 'true' : 'false');
     navButton.setAttribute('aria-expanded', navVisible ? 'true' : 'false');
+    if (navVisible) {
+      contentWrapper.classList.add('blur'); // Aplica la clase de difuminado
+      nav.classList.remove('blur'); // Asegúrate de que el menú hamburguesa no se difumine
+    } else {
+      contentWrapper.classList.remove('blur'); // Remueve la clase de difuminado
+    }
   }
 
   function toggleSubNav() {
