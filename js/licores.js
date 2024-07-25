@@ -64,7 +64,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
                 const categoriaHTML = `
                     <div class="category">
-                        <h2>${categoria.name}</h2>
                         <div class="products-container">${productsHTML}</div>
                     </div>
                 `;

@@ -1,11 +1,20 @@
-#licores-section, #cervezas-section, #otros-section {
-    padding: 20px;
-    background-color: #000000;
-    height: 100vh;
-  }
+ 
 
   body{
-    background-color: white !important;
+    background-color: white;
+  }
+
+  .title{
+    display: flex;
+    color: #1d1d1d;
+    font-family: 'Poppins';
+    height: 5rem;
+    background-color: #d3d3d3;
+  }
+
+
+  p{
+    color: coral;
   }
   
   .category {
