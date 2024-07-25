@@ -107,12 +107,60 @@
 }
 
 /* Estilo para el submenú */
+#sub-nav-background {
+  display: none; /* Ocultar submenú por defecto */
+}
+
 #sub-nav-background ul {
   padding: 10px;
   margin-top: 50px;
   list-style: none;
   width: 100%;
   text-align: left;
+}
+
+/* Estilo específico para el botón "Volver" */
+.back-button {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px; /* Reducción del padding */
+  display: flex;
+  align-items: center;
+  font-size: 14px; /* Tamaño de fuente reducido */
+  position: relative;
+}
+
+.back-button .back-arrow {
+  width: 4px; /* Reducir el tamaño de la flecha */
+  height: 4px; /* Reducir el tamaño de la flecha */
+  border-top: 2px solid rgb(255, 253, 253);
+  border-right: 2px solid rgb(255, 253, 253);
+  transform: rotate(-135deg); /* Rotar la flecha 90 grados a la izquierda */
+  margin-right: 5px; /* Añadir margen entre la flecha y el texto */
+}
+
+.back-button .back-label {
+  position: relative;
+}
+
+.back-button .back-label::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #fff;
+  transition: width 0.3s ease;
+  position: absolute;
+  bottom: -2px; /* Posiciona el subrayado justo debajo del texto */
+  left: 0;
+}
+
+.back-button:hover .back-label::after {
+  width: 100%; /* Animación de subrayado al pasar el cursor */
+}
+
+.back-button:hover {
+  text-decoration: none; /* Sin subrayado del texto */
 }
 
 /* Fondo oscuro semi-transparente */

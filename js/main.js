@@ -4,7 +4,6 @@ window.onload = function () {
     .then((data) => {
       document.getElementById("navbar").innerHTML = data;
       initializeNav(); // Llama a la función de inicialización después de cargar el navbar
-      adjustArrowPositions(); // Ajusta las posiciones de las flechas
     });
 };
 
@@ -28,6 +27,12 @@ function initializeNav() {
     subNavBackground.style.display = subNavVisible ? 'block' : 'none';
   }
 
+  function toggleMainNav() {
+    subNavVisible = false;
+    navBackground.style.display = 'block';
+    subNavBackground.style.display = 'none';
+  }
+
   navButton.addEventListener('click', toggleNav);
 
   document.querySelectorAll('a.toggle-nav').forEach(link => {
@@ -38,15 +43,9 @@ function initializeNav() {
     link.addEventListener('click', toggleSubNav);
   });
 
-  console.log("funciona bien:)");
-}
-
-function adjustArrowPositions() {
-  document.querySelectorAll('#nav-background ul li .nav-link').forEach(link => {
-    link.addEventListener('mouseenter', () => {
-      const linkWidth = link.offsetWidth;
-      const arrow = link.querySelector('::after');
-      arrow.style.left = `${linkWidth + 25}px`; // Posiciona la flecha a 25px a la derecha del elemento
-    });
+  document.querySelectorAll('a.toggle-main-nav').forEach(link => {
+    link.addEventListener('click', toggleMainNav);
   });
+
+  console.log("funciona bien:)");
 }
